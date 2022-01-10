@@ -33,8 +33,12 @@
                 indexAxis: "y",
                 scales: {
                     y: { stacked: true },
-                    x: { stacked: true },
-                }
+                    x: {
+                        stacked: true,
+                        ticks: { stepSize: 1 }
+                    },
+                },
+                maintainAspectRatio: false,
             },
         });
     };
